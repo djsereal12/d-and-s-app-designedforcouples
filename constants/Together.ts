@@ -1,35 +1,35 @@
 export const COLORS = {
-  primary: '#FF6B9D',
-  secondary: '#FF8E53',
-  background: '#FFF5F8',
-  card: '#FFFFFF',
-  text: '#2D1B33',
-  textSecondary: '#8B6B7A',
-  border: 'rgba(255,107,157,0.15)',
-  success: '#4CAF50',
-  warning: '#FF9800',
-  inputBg: '#FFF0F5',
+  primary: '#1E1B19',
+  secondary: '#796F68',
+  background: '#F3EFEA',
+  card: '#F9F7F4',
+  text: '#1A1817',
+  textSecondary: '#6E665F',
+  border: 'rgba(30,27,25,0.10)',
+  success: '#5D6B5B',
+  warning: '#A17C52',
+  inputBg: '#F0ECE7',
 };
 
 export const MOOD_MAP: Record<string, { emoji: string; color: string; label: string }> = {
-  happy:      { emoji: '😊', color: '#FFD700', label: 'Happy' },
-  sad:        { emoji: '😢', color: '#6B9FD4', label: 'Sad' },
-  angry:      { emoji: '😠', color: '#FF6B6B', label: 'Angry' },
-  anxious:    { emoji: '😰', color: '#B39DDB', label: 'Anxious' },
-  grateful:   { emoji: '🙏', color: '#81C784', label: 'Grateful' },
-  frustrated: { emoji: '😤', color: '#FF8A65', label: 'Frustrated' },
-  loved:      { emoji: '🥰', color: '#F48FB1', label: 'Loved' },
-  neutral:    { emoji: '😐', color: '#90A4AE', label: 'Neutral' },
+  happy:      { emoji: '😊', color: '#D8C49A', label: 'Happy' },
+  sad:        { emoji: '😢', color: '#9AA7B1', label: 'Sad' },
+  angry:      { emoji: '😠', color: '#BA7B5C', label: 'Angry' },
+  anxious:    { emoji: '😰', color: '#B7A9B9', label: 'Anxious' },
+  grateful:   { emoji: '🙏', color: '#9AA98F', label: 'Grateful' },
+  frustrated: { emoji: '😤', color: '#C78C73', label: 'Frustrated' },
+  loved:      { emoji: '🥰', color: '#C7A6A0', label: 'Loved' },
+  neutral:    { emoji: '😐', color: '#A7A29B', label: 'Neutral' },
 };
 
 export const MOODS = Object.keys(MOOD_MAP) as (keyof typeof MOOD_MAP)[];
 
 export const REFLECTION_TYPES = [
-  { key: 'hard_time', label: 'Hard Time', color: '#FF6B6B' },
-  { key: 'good_time', label: 'Good Time', color: '#81C784' },
-  { key: 'gratitude', label: 'Gratitude', color: '#FFD700' },
-  { key: 'growth',    label: 'Growth',    color: '#B39DDB' },
-  { key: 'general',   label: 'General',   color: '#90A4AE' },
+  { key: 'hard_time', label: 'Hard Time', color: '#B57B5C' },
+  { key: 'good_time', label: 'Good Time', color: '#9AA98F' },
+  { key: 'gratitude', label: 'Gratitude', color: '#D8C49A' },
+  { key: 'growth',    label: 'Growth',    color: '#B7A9B9' },
+  { key: 'general',   label: 'General',   color: '#A7A29B' },
 ];
 
 export const GOAL_CATEGORIES = [
@@ -60,13 +60,12 @@ export const MEMORY_PROMPTS = [
 ];
 
 export const THEME_COLORS = [
-  '#FF6B9D', '#E91E8C', '#FF4081', '#F06292',
-  '#BA68C8', '#9C27B0', '#7B1FA2', '#AB47BC',
-  '#5C6BC0', '#3F51B5', '#1976D2', '#42A5F5',
-  '#26A69A', '#00897B', '#4CAF50', '#66BB6A',
-  '#FF7043', '#FF5722', '#FF8E53', '#FFA726',
-  '#EC407A', '#AD1457', '#C62828', '#EF5350',
-  '#00ACC1', '#0097A7', '#26C6DA', '#80DEEA',
+  '#2F2D2A', '#4F4A46', '#7E756E', '#B7A99F',
+  '#D7CFC5', '#F1E8DF', '#9DA59F', '#78807D',
+  '#A4A38C', '#8B8A76', '#C6B89E', '#E3D9C6',
+  '#B9A89A', '#8E7E71', '#6D6258', '#D6CFCA',
+  '#A4A5A0', '#7C7C7A', '#594F49', '#B4AEA0',
+  '#9EA6A3', '#6A726E', '#D0C5B7', '#F5F0E8',
 ];
 
 export const FONT_OPTIONS = [

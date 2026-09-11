@@ -97,7 +97,7 @@ export default function AuthScreen() {
 
   return (
     <LinearGradient
-      colors={['#FF6B9D', '#E91E8C', '#9C27B0', '#7B1FA2']}
+      colors={['#F4F0EB', '#EEE7E0', '#E4DDD4', '#DED5CC']}
       style={styles.gradient}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
@@ -113,8 +113,8 @@ export default function AuthScreen() {
         >
           {/* Header */}
           <View style={styles.header}>
-            <Text style={styles.appName}>Together 💑</Text>
-            <Text style={styles.tagline}>Your love story, beautifully tracked</Text>
+            <Text style={styles.appName}>Together</Text>
+            <Text style={styles.tagline}>A calmer way to stay connected</Text>
           </View>
 
           {/* Card */}
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FFF5F8',
+    backgroundColor: '#F5F1EC',
   },
   scroll: {
     flexGrow: 1,
@@ -213,66 +213,73 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: 'center',
-    marginBottom: 40,
+    marginBottom: 36,
   },
   appName: {
-    fontSize: 42,
-    fontWeight: '800',
-    color: '#FFFFFF',
-    letterSpacing: -1,
-    textShadowColor: 'rgba(0,0,0,0.2)',
-    textShadowOffset: { width: 0, height: 2 },
-    textShadowRadius: 8,
+    fontSize: 58,
+    fontWeight: '900',
+    color: '#1E1B19',
+    letterSpacing: -3,
+    lineHeight: 60,
+    fontFamily: 'cursive',
   },
   tagline: {
-    fontSize: 16,
-    color: 'rgba(255,255,255,0.85)',
-    marginTop: 8,
+    fontSize: 18,
+    color: 'rgba(30,27,25,0.72)',
+    marginTop: 10,
     fontWeight: '500',
+    letterSpacing: -0.3,
+    fontFamily: 'cursive',
   },
   card: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 28,
+    backgroundColor: '#F9F7F4',
+    borderRadius: 30,
     padding: 28,
     width: '100%',
     maxWidth: 420,
-    boxShadow: '0 20px 60px rgba(0,0,0,0.25)',
+    borderWidth: 1,
+    borderColor: 'rgba(30,27,25,0.06)',
+    boxShadow: '0 14px 42px rgba(0,0,0,0.06)',
   } as any,
   cardTitle: {
-    fontSize: 26,
+    fontSize: 34,
     fontWeight: '700',
-    color: '#2D1B33',
+    color: '#1E1B19',
     marginBottom: 4,
+    letterSpacing: -1,
+    fontFamily: 'cursive',
   },
   cardSubtitle: {
-    fontSize: 15,
-    color: '#8B6B7A',
+    fontSize: 17,
+    color: '#6F665F',
     marginBottom: 24,
+    fontWeight: '400',
+    fontFamily: 'cursive',
   },
   appleBtn: {
-    backgroundColor: '#000000',
-    borderRadius: 14,
-    paddingVertical: 15,
+    backgroundColor: '#1E1B19',
+    borderRadius: 16,
+    paddingVertical: 16,
     alignItems: 'center',
     marginBottom: 12,
   },
   appleBtnText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: '600',
   },
   googleBtn: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 14,
-    paddingVertical: 15,
+    borderRadius: 16,
+    paddingVertical: 16,
     alignItems: 'center',
     marginBottom: 12,
-    borderWidth: 1.5,
-    borderColor: '#E0E0E0',
+    borderWidth: 1,
+    borderColor: '#D9D0C8',
   },
   googleBtnText: {
-    color: '#2D1B33',
-    fontSize: 16,
+    color: '#1E1B19',
+    fontSize: 17,
     fontWeight: '600',
   },
   divider: {
@@ -284,55 +291,58 @@ const styles = StyleSheet.create({
   dividerLine: {
     flex: 1,
     height: 1,
-    backgroundColor: '#F0E0E8',
+    backgroundColor: '#E1D7CF',
   },
   dividerText: {
-    fontSize: 13,
-    color: '#8B6B7A',
+    fontSize: 14,
+    color: '#706761',
     fontWeight: '500',
   },
   input: {
-    backgroundColor: '#FFF0F5',
-    borderRadius: 14,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    fontSize: 16,
-    color: '#2D1B33',
+    backgroundColor: '#F1EDE8',
+    borderRadius: 16,
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    fontSize: 17,
+    color: '#1E1B19',
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: 'rgba(255,107,157,0.2)',
+    borderColor: '#D9CFC3',
   },
   errorText: {
-    color: '#FF4444',
+    color: '#9C4C3E',
     fontSize: 13,
     marginBottom: 12,
     textAlign: 'center',
   },
   primaryBtn: {
-    backgroundColor: '#FF6B9D',
-    borderRadius: 14,
-    paddingVertical: 16,
+    backgroundColor: '#1E1B19',
+    borderRadius: 16,
+    paddingVertical: 18,
     alignItems: 'center',
     marginTop: 4,
   },
   disabledBtn: {
-    opacity: 0.7,
+    opacity: 0.72,
   },
   primaryBtnText: {
     color: '#FFFFFF',
-    fontSize: 17,
+    fontSize: 18,
     fontWeight: '700',
+    fontFamily: 'cursive',
   },
   toggleRow: {
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 22,
   },
   toggleText: {
-    fontSize: 14,
-    color: '#8B6B7A',
+    fontSize: 15,
+    color: '#706761',
+    fontFamily: 'cursive',
   },
   toggleLink: {
-    color: '#FF6B9D',
+    color: '#1E1B19',
     fontWeight: '700',
+    fontFamily: 'cursive',
   },
 });
